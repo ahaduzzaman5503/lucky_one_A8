@@ -1,4 +1,4 @@
-# Buy your favarite book!
+# Project Title:  Buy your favarite book!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### Project Description: This is Choocesing book website. Here you can Select Nice book and got a lucy Book.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
