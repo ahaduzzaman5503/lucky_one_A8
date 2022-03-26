@@ -30,10 +30,15 @@ const Book = (props) => {
                 }
             </div>
             <div className="selected-books">
+                {
+                     <CardBook 
+                     bookCard={bookCard}
+                     addToCartBtn= {addToCartBtn}
+                     ></CardBook>
+                }
                 
-                <div className='book-area'>
-                    <CardBook bookCard={bookCard} ></CardBook>
-                </div>
+                   
+                
                 
             </div>
         </div>
