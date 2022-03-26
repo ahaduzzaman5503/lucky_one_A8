@@ -2,6 +2,8 @@
     background-color: rgb(243, 200, 147);
     display: grid;
     grid-template-columns: 4fr 1fr;
+    padding: 30px;
+    border-radius: 10px;
 }
 .book-display{
     background-color: bisque;
@@ -9,4 +11,14 @@
     padding: 10px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+.selected-books{
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    .book-display{
+        grid-template-columns: repeat(1, 1fr);
+    }    
 }
