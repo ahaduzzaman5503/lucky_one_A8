@@ -9,6 +9,12 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -42,5 +48,56 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <section class="container">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                How does react work?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <p>
+                  React works in declarative code. It is also an efficient, and flexible JavaScript library for building user interfaces. A React application is made of multiple components, each responsible for rendering a small, reusable piece of HTML.     React has its own DOM. Which helps in minimizing the actual changes on browser DOM. Initially, virtual DOM will be an exact copy of real DOM.
+Whenever a component's state changes, code is re-rendered by DOM, and the browser has to repaint each and every element on the screen. 
+                </p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  What are difference between props and state?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <p>
+                    We can pass the data using Props and State in a component. Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. This.setState property is used to update the state values in the component. Props are known as properties it can be used to pass data from one component to another. Props cannot be modified, read-only, and Immutable. The state represents parts of an Application that can change. Each component can have its State. The state is Mutable and It is local to the component only.    
+                      
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  How useState work?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <p>
+                    useState is a Hook that allows you to have state variables in functional components. You pass the initial state to this function and it returns a variable with the current state value and another function to update this value.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+  </section>
   </body>
 </html>

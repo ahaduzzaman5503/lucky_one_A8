@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BookDisplay from '../BookDisplay/BookDisplay';
 import './Book.css'
+import CardBook from '../CardBook/CardBook'
 
 const Book = (props) => {
     const [ books, setBooks] = useState([]);
@@ -13,7 +14,6 @@ const Book = (props) => {
     }, [])
 
     const addToCartBtn = (book) => {
-        console.log(book)
         const newBookCard = [...bookCard, book]
         setBookcard(newBookCard);
     }
@@ -30,12 +30,11 @@ const Book = (props) => {
                 }
             </div>
             <div className="selected-books">
-                <h1>Selected Books</h1>
+                
                 <div className='book-area'>
-                    <p>Total Book: {bookCard.length}</p>
+                    <CardBook bookCard={bookCard} ></CardBook>
                 </div>
-                <button className='btn-right-side' >Choose 1 for me</button> <br /><br />
-                <button className='btn-right-side'>Choose again</button>
+                
             </div>
         </div>
     );
