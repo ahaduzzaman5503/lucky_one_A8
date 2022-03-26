@@ -9,7 +9,7 @@ const BookDisplay = ({book, addToCartBtn}) => {
             <h2>{name}</h2>
             <h3>লেখক: {authors}</h3>
             <h4>বইয়ের দাম: {price}</h4>
-            <button onClick={ ()=> addToCartBtn(book)} className='btn'>Add to card <i class='fas fa-cart-plus' ></i> </button> 
+            <button onClick={ ()=> addToCartBtn(book)} className='btn'>Add to card <i className='fas fa-cart-plus' ></i> </button> 
         </div>
     );
 };

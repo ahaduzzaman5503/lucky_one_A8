@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BookDisplay from '../BookDisplay/BookDisplay';
-import './Book.css'
-import CardBook from '../CardBook/CardBook'
+import './Book.css';
+import CardBook from '../CardBook/CardBook';
 
 const Book = (props) => {
     const [ books, setBooks] = useState([]);
@@ -16,6 +16,7 @@ const Book = (props) => {
     const addToCartBtn = (book) => {
         const newBookCard = [...bookCard, book]
         setBookcard(newBookCard);
+        console.log(bookCard)
     }
 
     return (
@@ -31,10 +32,11 @@ const Book = (props) => {
             </div>
             <div className="selected-books">
                 {
-                     <CardBook 
-                     bookCard={bookCard}
+                   bookCard.map(book=><CardBook 
+                     bookCard={book}
                      addToCartBtn= {addToCartBtn}
                      ></CardBook>
+                   )
                 }
                 
                    
